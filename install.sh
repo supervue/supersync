@@ -39,6 +39,11 @@ for item in os.listdir(extracted_dir):
 shutil.rmtree(extract_to)
 END
 
+cd supersync/supersync-main/
+mv * ../../
+cd ../../
+rm -rf supersync/
+
 # Clean up by removing the zip file
 rm $REPO_NAME.zip
 
