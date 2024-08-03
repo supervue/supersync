@@ -158,10 +158,8 @@ cd ~/node_monitoring/check-pull-run-kill-delete
 systemctl daemon-reload
 # Restart the cron service
 service cron restart
-cd ../../
-pwd
-sudo rm -rf install.sh
-echo ""
+cd ~
+rm -rf install.sh
 echo ""
 echo ""
 echo "-----------------------------------"
