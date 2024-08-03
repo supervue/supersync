@@ -152,13 +152,14 @@ cd ..
 chmod +x start_monitoring.sh
 chmod +x start_services.sh
 cd ~/node_monitoring/check-pull-run-kill-delete
-chmod +x start_trash.sh
+# chmod +x start.sh
 
 # Restart the systemctl service
 systemctl daemon-reload
 # Restart the cron service
 service cron restart
-echo "restarted cron service"
+
+rm -rf install.sh
 echo ""
 echo ""
 echo ""
