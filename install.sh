@@ -159,7 +159,8 @@ systemctl daemon-reload
 # Restart the cron service
 service cron restart
 cd ../../
-rm -rf install.sh
+pwd
+sudo rm -rf install.sh
 echo ""
 echo ""
 echo ""
